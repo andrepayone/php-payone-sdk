@@ -1,42 +1,7 @@
 parameters:
 	ignoreErrors:
 		-
-			message: "#^Method Cakasim\\\\Payone\\\\Sdk\\\\Api\\\\Message\\\\AbstractMessage\\:\\:unserialize\\(\\) has parameter \\$serialized with no typehint specified\\.$#"
-			count: 1
-			path: src\Api\Message\AbstractMessage.php
-
-		-
-			message: "#^Method Cakasim\\\\Payone\\\\Sdk\\\\Api\\\\Message\\\\BinaryResponse\\:\\:unserialize\\(\\) has parameter \\$serialized with no typehint specified\\.$#"
-			count: 1
-			path: src\Api\Message\BinaryResponse.php
-
-		-
-			message: "#^Method Cakasim\\\\Payone\\\\Sdk\\\\Api\\\\Message\\\\JsonResponse\\:\\:unserialize\\(\\) has parameter \\$serialized with no typehint specified\\.$#"
-			count: 1
-			path: src\Api\Message\JsonResponse.php
-
-		-
-			message: "#^Parameter \\#1 \\$name of class ReflectionFunction constructor expects Closure\\|string, callable\\(\\)\\: mixed given\\.$#"
-			count: 1
-			path: src\Container\Binding\CallableBinding.php
-
-		-
-			message: "#^Parameter \\#1 \\$argument of class ReflectionClass constructor expects class\\-string\\<T of object\\>\\|T of object, string given\\.$#"
-			count: 1
-			path: src\Container\Binding\ClassBinding.php
-
-		-
 			message: "#^Unreachable statement \\- code above always terminates\\.$#"
 			count: 1
 			path: src\Container\Container.php
-
-		-
-			message: "#^Method Cakasim\\\\Payone\\\\Sdk\\\\Notification\\\\Message\\\\AbstractMessage\\:\\:unserialize\\(\\) has parameter \\$serialized with no typehint specified\\.$#"
-			count: 1
-			path: src\Notification\Message\AbstractMessage.php
-
-		-
-			message: "#^PHPDoc tag @throws with type Psr\\\\Container\\\\ContainerExceptionInterface is not subtype of Throwable$#"
-			count: 4
-			path: src\Sdk.php
 

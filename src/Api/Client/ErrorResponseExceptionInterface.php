@@ -29,7 +29,7 @@ interface ErrorResponseExceptionInterface extends SdkExceptionInterface
      * @return string The error message.
      * @see https://docs.payone.com/display/public/PLATFORM/errormessage+-+definition
      */
-    public function getMessage();
+    public function getMessage(): string;
 
     /**
      * Returns the public PAYONE API error message.

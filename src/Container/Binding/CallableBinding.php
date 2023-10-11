@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Payone\Sdk\Container\Binding;
 
+use Closure;
 use Payone\Sdk\Container\Container;
 use Payone\Sdk\Container\ContainerException;
 use ReflectionException;
@@ -50,12 +51,12 @@ class CallableBinding implements BindingInterface
      *
      * @param Container $container The container that uses this binding.
      * @param string $abstract The class / interface type the concrete is bound to.
-     * @param callable $concrete The callable that returns the underlying value.
+     * @param string|Closure $concrete The callable that returns the underlying value.
      * @param bool $singleton Whether or not to use the underlying value as singleton.
      *
      * @throws ContainerException If the provided callable does not satisfy the requirements.
      */
-    public function __construct(Container $container, string $abstract, callable $concrete, bool $singleton)
+    public function __construct(Container $container, string $abstract, string|Closure $concrete, bool $singleton)
     {
         $this->container = $container;
         $this->abstract = $abstract;

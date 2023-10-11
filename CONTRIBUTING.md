@@ -12,7 +12,7 @@ This project follows a consistent coding style. Please adhere to this style of c
 and check for deviations before committing.
 
 The coding style follows [PSR-2](https://www.php-fig.org/psr/psr-2/) with additional
-specifications. The exact configuration can be found in the file [`.php_cs.dist`](.php_cs.dist).
+specifications. The exact configuration can be found in the file [`.php_cs.dist`](.php-cs-fixer.dist.php).
 This is the configuration for the [PHP Coding Style Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer),
 which checks for compliance with the coding style.
 

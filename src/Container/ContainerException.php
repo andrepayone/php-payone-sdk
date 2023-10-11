@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Payone\Sdk\Container;
 
 use Payone\Sdk\SdkExceptionInterface;
-use Exception;
 use Psr\Container\ContainerExceptionInterface;
+use Exception;
 use Throwable;
 
 /**
