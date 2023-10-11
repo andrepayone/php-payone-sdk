@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Redirect\Token\Format;
+namespace Payone\Sdk\Redirect\Token\Format;
 
-use Cakasim\Payone\Sdk\Redirect\Token\TokenInterface;
+use Payone\Sdk\Redirect\Token\TokenInterface;
 
 /**
  * A token encoder transforms a token object into a string representation

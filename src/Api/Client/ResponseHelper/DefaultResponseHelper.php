@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Api\Client\ResponseHelper;
+namespace Payone\Sdk\Api\Client\ResponseHelper;
 
-use Cakasim\Payone\Sdk\Api\Client\ClientException;
-use Cakasim\Payone\Sdk\Api\Client\ErrorResponseException;
-use Cakasim\Payone\Sdk\Api\Format\DecoderExceptionInterface;
-use Cakasim\Payone\Sdk\Api\Format\DecoderInterface;
-use Cakasim\Payone\Sdk\Api\Message\ResponseInterface;
+use Payone\Sdk\Api\Client\ClientException;
+use Payone\Sdk\Api\Client\ErrorResponseException;
+use Payone\Sdk\Api\Format\DecoderExceptionInterface;
+use Payone\Sdk\Api\Format\DecoderInterface;
+use Payone\Sdk\Api\Message\ResponseInterface;
 use Psr\Http\Message\RequestInterface as HttpRequestInterface;
 use Psr\Http\Message\ResponseInterface as HttpResponseInterface;
 

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Tests;
+namespace Payone\Sdk\Tests;
 
-use Cakasim\Payone\Sdk\Api\Service as ApiService;
-use Cakasim\Payone\Sdk\Container\Container;
-use Cakasim\Payone\Sdk\ContainerBuilder;
-use Cakasim\Payone\Sdk\Http\Service as HttpService;
-use Cakasim\Payone\Sdk\Notification\Service as NotificationService;
-use Cakasim\Payone\Sdk\Redirect\Service as RedirectService;
+use Payone\Sdk\Api\Service as ApiService;
+use Payone\Sdk\Container\Container;
+use Payone\Sdk\ContainerBuilder;
+use Payone\Sdk\Http\Service as HttpService;
+use Payone\Sdk\Notification\Service as NotificationService;
+use Payone\Sdk\Redirect\Service as RedirectService;
 use PHPUnit\Framework\TestCase;
 
 /**

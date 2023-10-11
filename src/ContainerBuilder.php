@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk;
+namespace Payone\Sdk;
 
-use Cakasim\Payone\Sdk\Container\Container;
-use Cakasim\Payone\Sdk\Container\ContainerException;
+use Payone\Sdk\Container\Container;
+use Payone\Sdk\Container\ContainerException;
 
 /**
  * Builds the container and applies SDK default dependencies.
@@ -26,33 +26,33 @@ class ContainerBuilder
         \Psr\Http\Message\ResponseFactoryInterface::class,
         \Psr\Http\Message\ServerRequestFactoryInterface::class,
         \Psr\Http\Client\ClientInterface::class,
-        \Cakasim\Payone\Sdk\Http\Service::class,
-        \Cakasim\Payone\Sdk\Api\Service::class,
-        \Cakasim\Payone\Sdk\Notification\Service::class,
-        \Cakasim\Payone\Sdk\Redirect\Service::class,
-        \Cakasim\Payone\Sdk\Config\ConfigInterface::class,
-        \Cakasim\Payone\Sdk\Api\Format\EncoderInterface::class,
-        \Cakasim\Payone\Sdk\Api\Format\DecoderInterface::class,
-        \Cakasim\Payone\Sdk\Api\Client\ClientInterface::class,
-        \Cakasim\Payone\Sdk\Notification\Processor\ProcessorInterface::class,
-        \Cakasim\Payone\Sdk\Notification\Handler\HandlerManagerInterface::class,
-        \Cakasim\Payone\Sdk\Redirect\Token\TokenFactoryInterface::class,
-        \Cakasim\Payone\Sdk\Redirect\Token\Format\EncoderInterface::class,
-        \Cakasim\Payone\Sdk\Redirect\Token\Format\DecoderInterface::class,
-        \Cakasim\Payone\Sdk\Redirect\Token\Format\SignerInterface::class,
-        \Cakasim\Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorInterface::class,
-        \Cakasim\Payone\Sdk\Redirect\Handler\HandlerManagerInterface::class,
-        \Cakasim\Payone\Sdk\Redirect\Processor\ProcessorInterface::class,
+        \Payone\Sdk\Http\Service::class,
+        \Payone\Sdk\Api\Service::class,
+        \Payone\Sdk\Notification\Service::class,
+        \Payone\Sdk\Redirect\Service::class,
+        \Payone\Sdk\Config\ConfigInterface::class,
+        \Payone\Sdk\Api\Format\EncoderInterface::class,
+        \Payone\Sdk\Api\Format\DecoderInterface::class,
+        \Payone\Sdk\Api\Client\ClientInterface::class,
+        \Payone\Sdk\Notification\Processor\ProcessorInterface::class,
+        \Payone\Sdk\Notification\Handler\HandlerManagerInterface::class,
+        \Payone\Sdk\Redirect\Token\TokenFactoryInterface::class,
+        \Payone\Sdk\Redirect\Token\Format\EncoderInterface::class,
+        \Payone\Sdk\Redirect\Token\Format\DecoderInterface::class,
+        \Payone\Sdk\Redirect\Token\Format\SignerInterface::class,
+        \Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorInterface::class,
+        \Payone\Sdk\Redirect\Handler\HandlerManagerInterface::class,
+        \Payone\Sdk\Redirect\Processor\ProcessorInterface::class,
     ];
 
     /**
      * The SDK service bindings.
      */
     protected const SERVICE_BINDINGS = [
-        \Cakasim\Payone\Sdk\Http\Service::class,
-        \Cakasim\Payone\Sdk\Api\Service::class,
-        \Cakasim\Payone\Sdk\Notification\Service::class,
-        \Cakasim\Payone\Sdk\Redirect\Service::class,
+        \Payone\Sdk\Http\Service::class,
+        \Payone\Sdk\Api\Service::class,
+        \Payone\Sdk\Notification\Service::class,
+        \Payone\Sdk\Redirect\Service::class,
     ];
 
     /**
@@ -72,27 +72,27 @@ class ContainerBuilder
         // --- SDK Bindings ---
 
         // Config
-        \Cakasim\Payone\Sdk\Config\ConfigInterface::class => [\Cakasim\Payone\Sdk\Config\Config::class, true],
+        \Payone\Sdk\Config\ConfigInterface::class => [\Payone\Sdk\Config\Config::class, true],
 
         // API Format
-        \Cakasim\Payone\Sdk\Api\Format\EncoderInterface::class => [\Cakasim\Payone\Sdk\Api\Format\Encoder::class, true],
-        \Cakasim\Payone\Sdk\Api\Format\DecoderInterface::class => [\Cakasim\Payone\Sdk\Api\Format\Decoder::class, true],
+        \Payone\Sdk\Api\Format\EncoderInterface::class => [\Payone\Sdk\Api\Format\Encoder::class, true],
+        \Payone\Sdk\Api\Format\DecoderInterface::class => [\Payone\Sdk\Api\Format\Decoder::class, true],
 
         // API Client
-        \Cakasim\Payone\Sdk\Api\Client\ClientInterface::class => [\Cakasim\Payone\Sdk\Api\Client\Client::class, true],
+        \Payone\Sdk\Api\Client\ClientInterface::class => [\Payone\Sdk\Api\Client\Client::class, true],
 
         // Notification
-        \Cakasim\Payone\Sdk\Notification\Processor\ProcessorInterface::class    => [\Cakasim\Payone\Sdk\Notification\Processor\Processor::class, true],
-        \Cakasim\Payone\Sdk\Notification\Handler\HandlerManagerInterface::class => [\Cakasim\Payone\Sdk\Notification\Handler\HandlerManager::class, true],
+        \Payone\Sdk\Notification\Processor\ProcessorInterface::class    => [\Payone\Sdk\Notification\Processor\Processor::class, true],
+        \Payone\Sdk\Notification\Handler\HandlerManagerInterface::class => [\Payone\Sdk\Notification\Handler\HandlerManager::class, true],
 
         // Redirect
-        \Cakasim\Payone\Sdk\Redirect\Token\TokenFactoryInterface::class        => [\Cakasim\Payone\Sdk\Redirect\Token\TokenFactory::class, true],
-        \Cakasim\Payone\Sdk\Redirect\Token\Format\EncoderInterface::class      => [\Cakasim\Payone\Sdk\Redirect\Token\Format\Encoder::class, true],
-        \Cakasim\Payone\Sdk\Redirect\Token\Format\DecoderInterface::class      => [\Cakasim\Payone\Sdk\Redirect\Token\Format\Decoder::class, true],
-        \Cakasim\Payone\Sdk\Redirect\Token\Format\SignerInterface::class       => [\Cakasim\Payone\Sdk\Redirect\Token\Format\Signer::class, true],
-        \Cakasim\Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorInterface::class => [\Cakasim\Payone\Sdk\Redirect\UrlGenerator\UrlGenerator::class, true],
-        \Cakasim\Payone\Sdk\Redirect\Handler\HandlerManagerInterface::class    => [\Cakasim\Payone\Sdk\Redirect\Handler\HandlerManager::class, true],
-        \Cakasim\Payone\Sdk\Redirect\Processor\ProcessorInterface::class       => [\Cakasim\Payone\Sdk\Redirect\Processor\Processor::class, true],
+        \Payone\Sdk\Redirect\Token\TokenFactoryInterface::class        => [\Payone\Sdk\Redirect\Token\TokenFactory::class, true],
+        \Payone\Sdk\Redirect\Token\Format\EncoderInterface::class      => [\Payone\Sdk\Redirect\Token\Format\Encoder::class, true],
+        \Payone\Sdk\Redirect\Token\Format\DecoderInterface::class      => [\Payone\Sdk\Redirect\Token\Format\Decoder::class, true],
+        \Payone\Sdk\Redirect\Token\Format\SignerInterface::class       => [\Payone\Sdk\Redirect\Token\Format\Signer::class, true],
+        \Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorInterface::class => [\Payone\Sdk\Redirect\UrlGenerator\UrlGenerator::class, true],
+        \Payone\Sdk\Redirect\Handler\HandlerManagerInterface::class    => [\Payone\Sdk\Redirect\Handler\HandlerManager::class, true],
+        \Payone\Sdk\Redirect\Processor\ProcessorInterface::class       => [\Payone\Sdk\Redirect\Processor\Processor::class, true],
     ];
 
     /**

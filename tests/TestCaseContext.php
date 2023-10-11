@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Tests;
+namespace Payone\Sdk\Tests;
 
-use Cakasim\Payone\Sdk\Config\Config;
-use Cakasim\Payone\Sdk\Config\ConfigInterface;
-use Cakasim\Payone\Sdk\Container\ContainerException;
-use Cakasim\Payone\Sdk\ContainerBuilder;
-use Cakasim\Payone\Sdk\Sdk;
+use Payone\Sdk\Config\Config;
+use Payone\Sdk\Config\ConfigInterface;
+use Payone\Sdk\Container\ContainerException;
+use Payone\Sdk\ContainerBuilder;
+use Payone\Sdk\Sdk;
 use Psr\Container\ContainerInterface;
 
 /**

@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk;
+namespace Payone\Sdk;
 
-use Cakasim\Payone\Sdk\Api\Service as ApiService;
-use Cakasim\Payone\Sdk\Config\ConfigInterface;
-use Cakasim\Payone\Sdk\Container\ContainerException;
-use Cakasim\Payone\Sdk\Http\Service as HttpService;
-use Cakasim\Payone\Sdk\Notification\Service as NotificationService;
-use Cakasim\Payone\Sdk\Redirect\Service as RedirectService;
+use Payone\Sdk\Api\Service as ApiService;
+use Payone\Sdk\Config\ConfigInterface;
+use Payone\Sdk\Container\ContainerException;
+use Payone\Sdk\Http\Service as HttpService;
+use Payone\Sdk\Notification\Service as NotificationService;
+use Payone\Sdk\Redirect\Service as RedirectService;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\ContainerInterface;
 

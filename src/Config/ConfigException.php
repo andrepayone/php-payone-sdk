@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Config;
+namespace Payone\Sdk\Config;
 
 use Exception;
 

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Container\Binding;
+namespace Payone\Sdk\Container\Binding;
 
-use Cakasim\Payone\Sdk\Container\ContainerException;
+use Payone\Sdk\Container\ContainerException;
 
 /**
  * A binding that uses an instance as

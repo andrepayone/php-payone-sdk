@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Tests\Container;
+namespace Payone\Sdk\Tests\Container;
 
-use Cakasim\Payone\Sdk\Container\Container;
-use Cakasim\Payone\Sdk\Tests\Container\DummyClasses\A;
-use Cakasim\Payone\Sdk\Tests\Container\DummyClasses\AbstractA;
-use Cakasim\Payone\Sdk\Tests\Container\DummyClasses\AInterface;
-use Cakasim\Payone\Sdk\Tests\Container\DummyClasses\B;
-use Cakasim\Payone\Sdk\Tests\Container\DummyClasses\BInterface;
-use Cakasim\Payone\Sdk\Tests\Container\DummyClasses\C;
-use Cakasim\Payone\Sdk\Tests\Container\DummyClasses\ChildOfA;
-use Cakasim\Payone\Sdk\Tests\Container\DummyClasses\D;
-use Cakasim\Payone\Sdk\Tests\Container\DummyClasses\E;
+use Payone\Sdk\Container\Container;
+use Payone\Sdk\Tests\Container\DummyClasses\A;
+use Payone\Sdk\Tests\Container\DummyClasses\AbstractA;
+use Payone\Sdk\Tests\Container\DummyClasses\AInterface;
+use Payone\Sdk\Tests\Container\DummyClasses\B;
+use Payone\Sdk\Tests\Container\DummyClasses\BInterface;
+use Payone\Sdk\Tests\Container\DummyClasses\C;
+use Payone\Sdk\Tests\Container\DummyClasses\ChildOfA;
+use Payone\Sdk\Tests\Container\DummyClasses\D;
+use Payone\Sdk\Tests\Container\DummyClasses\E;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\ContainerInterface;

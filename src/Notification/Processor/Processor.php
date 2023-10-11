@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Notification\Processor;
+namespace Payone\Sdk\Notification\Processor;
 
-use Cakasim\Payone\Sdk\Config\ConfigExceptionInterface;
-use Cakasim\Payone\Sdk\Config\ConfigInterface;
-use Cakasim\Payone\Sdk\Notification\Context\Context;
-use Cakasim\Payone\Sdk\Notification\Handler\HandlerManagerInterface;
-use Cakasim\Payone\Sdk\Notification\Message\MessageInterface;
-use Cakasim\Payone\Sdk\Notification\Message\TransactionStatus;
-use Cakasim\Payone\Sdk\Notification\Message\TransactionStatusInterface;
+use Payone\Sdk\Config\ConfigExceptionInterface;
+use Payone\Sdk\Config\ConfigInterface;
+use Payone\Sdk\Notification\Context\Context;
+use Payone\Sdk\Notification\Handler\HandlerManagerInterface;
+use Payone\Sdk\Notification\Message\MessageInterface;
+use Payone\Sdk\Notification\Message\TransactionStatus;
+use Payone\Sdk\Notification\Message\TransactionStatusInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Psr\Log\LoggerInterface;
 

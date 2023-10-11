@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Api\Client;
+namespace Payone\Sdk\Api\Client;
 
-use Cakasim\Payone\Sdk\Api\Client\ResponseHelper\BinaryResponseHelper;
-use Cakasim\Payone\Sdk\Api\Client\ResponseHelper\DefaultResponseHelper;
-use Cakasim\Payone\Sdk\Api\Client\ResponseHelper\JsonResponseHelper;
-use Cakasim\Payone\Sdk\Api\Client\ResponseHelper\ResponseHelperInterface;
-use Cakasim\Payone\Sdk\Api\Format\DecoderInterface;
-use Cakasim\Payone\Sdk\Api\Format\EncoderExceptionInterface;
-use Cakasim\Payone\Sdk\Api\Format\EncoderInterface;
-use Cakasim\Payone\Sdk\Api\Message\Parameter\SubAccountIdAwareInterface;
-use Cakasim\Payone\Sdk\Api\Message\RequestInterface;
-use Cakasim\Payone\Sdk\Api\Message\ResponseInterface;
-use Cakasim\Payone\Sdk\Config\ConfigExceptionInterface;
-use Cakasim\Payone\Sdk\Config\ConfigInterface;
-use Cakasim\Payone\Sdk\Sdk;
+use Payone\Sdk\Api\Client\ResponseHelper\BinaryResponseHelper;
+use Payone\Sdk\Api\Client\ResponseHelper\DefaultResponseHelper;
+use Payone\Sdk\Api\Client\ResponseHelper\JsonResponseHelper;
+use Payone\Sdk\Api\Client\ResponseHelper\ResponseHelperInterface;
+use Payone\Sdk\Api\Format\DecoderInterface;
+use Payone\Sdk\Api\Format\EncoderExceptionInterface;
+use Payone\Sdk\Api\Format\EncoderInterface;
+use Payone\Sdk\Api\Message\Parameter\SubAccountIdAwareInterface;
+use Payone\Sdk\Api\Message\RequestInterface;
+use Payone\Sdk\Api\Message\ResponseInterface;
+use Payone\Sdk\Config\ConfigExceptionInterface;
+use Payone\Sdk\Config\ConfigInterface;
+use Payone\Sdk\Sdk;
 use Psr\Http\Client\ClientExceptionInterface as HttpClientExceptionInterface;
 use Psr\Http\Client\ClientInterface as HttpClientInterface;
 use Psr\Http\Message\RequestFactoryInterface as HttpRequestFactoryInterface;

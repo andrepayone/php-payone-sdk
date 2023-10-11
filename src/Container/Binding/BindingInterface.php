@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Container\Binding;
+namespace Payone\Sdk\Container\Binding;
 
 /**
  * Defines an interface for container entry bindings.

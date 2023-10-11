@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Api\Client;
+namespace Payone\Sdk\Api\Client;
 
-use Cakasim\Payone\Sdk\Api\Message\RequestInterface;
-use Cakasim\Payone\Sdk\Api\Message\ResponseInterface;
+use Payone\Sdk\Api\Message\RequestInterface;
+use Payone\Sdk\Api\Message\ResponseInterface;
 
 /**
  * The interface for API clients.

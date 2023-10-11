@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Notification\Message;
+namespace Payone\Sdk\Notification\Message;
 
 /**
  * The base class for notification messages from PAYONE.

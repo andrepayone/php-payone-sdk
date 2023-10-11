@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Redirect\Processor;
+namespace Payone\Sdk\Redirect\Processor;
 
-use Cakasim\Payone\Sdk\Config\ConfigExceptionInterface;
-use Cakasim\Payone\Sdk\Config\ConfigInterface;
-use Cakasim\Payone\Sdk\Redirect\Context\Context;
-use Cakasim\Payone\Sdk\Redirect\Handler\HandlerManagerInterface;
-use Cakasim\Payone\Sdk\Redirect\Token\Format\DecoderExceptionInterface;
-use Cakasim\Payone\Sdk\Redirect\Token\Format\DecoderInterface;
-use Cakasim\Payone\Sdk\Redirect\Token\TokenInterface;
+use Payone\Sdk\Config\ConfigExceptionInterface;
+use Payone\Sdk\Config\ConfigInterface;
+use Payone\Sdk\Redirect\Context\Context;
+use Payone\Sdk\Redirect\Handler\HandlerManagerInterface;
+use Payone\Sdk\Redirect\Token\Format\DecoderExceptionInterface;
+use Payone\Sdk\Redirect\Token\Format\DecoderInterface;
+use Payone\Sdk\Redirect\Token\TokenInterface;
 use Psr\Log\LoggerInterface;
 
 /**

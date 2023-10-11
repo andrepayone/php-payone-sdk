@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Tests\Container\DummyClasses;
+namespace Payone\Sdk\Tests\Container\DummyClasses;
 
 interface BInterface
 {

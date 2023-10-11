@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Api;
+namespace Payone\Sdk\Api;
 
-use Cakasim\Payone\Sdk\AbstractService;
-use Cakasim\Payone\Sdk\Api\Client\ClientExceptionInterface;
-use Cakasim\Payone\Sdk\Api\Client\ClientInterface;
-use Cakasim\Payone\Sdk\Api\Client\ErrorResponseExceptionInterface;
-use Cakasim\Payone\Sdk\Api\Message\RequestInterface;
-use Cakasim\Payone\Sdk\Api\Message\ResponseInterface;
+use Payone\Sdk\AbstractService;
+use Payone\Sdk\Api\Client\ClientExceptionInterface;
+use Payone\Sdk\Api\Client\ClientInterface;
+use Payone\Sdk\Api\Client\ErrorResponseExceptionInterface;
+use Payone\Sdk\Api\Message\RequestInterface;
+use Payone\Sdk\Api\Message\ResponseInterface;
 use Psr\Container\ContainerInterface;
 
 /**

@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Notification;
+namespace Payone\Sdk\Notification;
 
-use Cakasim\Payone\Sdk\AbstractService;
-use Cakasim\Payone\Sdk\Notification\Handler\HandlerInterface;
-use Cakasim\Payone\Sdk\Notification\Handler\HandlerManagerInterface;
-use Cakasim\Payone\Sdk\Notification\Processor\ProcessorExceptionInterface;
-use Cakasim\Payone\Sdk\Notification\Processor\ProcessorInterface;
+use Payone\Sdk\AbstractService;
+use Payone\Sdk\Notification\Handler\HandlerInterface;
+use Payone\Sdk\Notification\Handler\HandlerManagerInterface;
+use Payone\Sdk\Notification\Processor\ProcessorExceptionInterface;
+use Payone\Sdk\Notification\Processor\ProcessorInterface;
 use Psr\Container\ContainerInterface;
 use Psr\Http\Message\ServerRequestInterface;
 

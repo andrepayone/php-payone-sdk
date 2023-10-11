@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Redirect\Processor;
+namespace Payone\Sdk\Redirect\Processor;
 
 /**
  * The interface for redirect processors.

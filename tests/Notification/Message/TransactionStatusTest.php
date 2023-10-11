@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Tests\Notification\Message;
+namespace Payone\Sdk\Tests\Notification\Message;
 
-use Cakasim\Payone\Sdk\Notification\Message\AbstractMessage;
-use Cakasim\Payone\Sdk\Notification\Message\TransactionStatus;
-use Cakasim\Payone\Sdk\Notification\Message\TransactionStatusInterface;
+use Payone\Sdk\Notification\Message\AbstractMessage;
+use Payone\Sdk\Notification\Message\TransactionStatus;
+use Payone\Sdk\Notification\Message\TransactionStatusInterface;
 use PHPUnit\Framework\TestCase;
 
 /**

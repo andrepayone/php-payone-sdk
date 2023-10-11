@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Container;
+namespace Payone\Sdk\Container;
 
-use Cakasim\Payone\Sdk\SdkExceptionInterface;
+use Payone\Sdk\SdkExceptionInterface;
 use Exception;
 use Psr\Container\ContainerExceptionInterface;
 use Throwable;

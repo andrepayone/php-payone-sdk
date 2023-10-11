@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Container;
+namespace Payone\Sdk\Container;
 
-use Cakasim\Payone\Sdk\Container\Binding\BindingInterface;
-use Cakasim\Payone\Sdk\Container\Binding\CallableBinding;
-use Cakasim\Payone\Sdk\Container\Binding\ClassBinding;
-use Cakasim\Payone\Sdk\Container\Binding\InstanceBinding;
+use Payone\Sdk\Container\Binding\BindingInterface;
+use Payone\Sdk\Container\Binding\CallableBinding;
+use Payone\Sdk\Container\Binding\ClassBinding;
+use Payone\Sdk\Container\Binding\InstanceBinding;
 use Psr\Container\ContainerInterface;
 
 /**

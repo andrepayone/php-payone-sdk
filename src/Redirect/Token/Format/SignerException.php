@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Redirect\Token\Format;
+namespace Payone\Sdk\Redirect\Token\Format;
 
 use Exception;
 

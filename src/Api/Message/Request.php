@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Api\Message;
+namespace Payone\Sdk\Api\Message;
 
 /**
  * The implementation of the API request interface.

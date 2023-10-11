@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Notification\Processor;
+namespace Payone\Sdk\Notification\Processor;
 
-use Cakasim\Payone\Sdk\SdkExceptionInterface;
+use Payone\Sdk\SdkExceptionInterface;
 
 /**
  * @author Fabian Böttcher <me@cakasim.de>

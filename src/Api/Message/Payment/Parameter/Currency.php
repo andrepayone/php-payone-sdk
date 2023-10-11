@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Api\Message\Payment\Parameter;
+namespace Payone\Sdk\Api\Message\Payment\Parameter;
 
 /**
  * Implements getter and setter for the currency API request parameter.

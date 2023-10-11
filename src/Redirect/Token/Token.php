@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Redirect\Token;
+namespace Payone\Sdk\Redirect\Token;
 
 /**
  * The implementation of the TokenInterface.

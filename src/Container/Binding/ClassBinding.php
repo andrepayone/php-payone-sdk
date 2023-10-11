@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Container\Binding;
+namespace Payone\Sdk\Container\Binding;
 
-use Cakasim\Payone\Sdk\Container\Container;
-use Cakasim\Payone\Sdk\Container\ContainerException;
+use Payone\Sdk\Container\Container;
+use Payone\Sdk\Container\ContainerException;
 use ReflectionClass;
 use ReflectionException;
 
