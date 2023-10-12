@@ -34,13 +34,14 @@
         "php": "^8.1",
         "ext-json": "*",
         "ext-openssl": "*",
-        "psr/http-message": "^2.0",
+        "psr/http-message": "^1.1",
         "psr/http-client": "^1.0.3",
         "psr/http-factory": "^1.0.2",
         "psr/log": "^1.1",
-        "psr/container": "^1.0"
+        "psr/container": "^1.0",
+        "andrepayone/payone-sdk-http-message": "0.2.0",
+        "andrepayone/payone-sdk-silent-logger": "0.2.0"
     },
-    "require-dev": {},
     "suggest": {
         "andrepayone/payone-sdk-http-message": "Provides the default HTTP message implementation.",
         "cakasim/payone-sdk-stream-client": "Provides the default HTTP client implementation.",

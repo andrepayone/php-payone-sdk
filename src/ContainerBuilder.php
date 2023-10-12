@@ -26,33 +26,33 @@ class ContainerBuilder
         \Psr\Http\Message\ResponseFactoryInterface::class,
         \Psr\Http\Message\ServerRequestFactoryInterface::class,
         \Psr\Http\Client\ClientInterface::class,
-        \Payone\Sdk\Http\Service::class,
-        \Payone\Sdk\Api\Service::class,
-        \Payone\Sdk\Notification\Service::class,
-        \Payone\Sdk\Redirect\Service::class,
-        \Payone\Sdk\Config\ConfigInterface::class,
-        \Payone\Sdk\Api\Format\EncoderInterface::class,
-        \Payone\Sdk\Api\Format\DecoderInterface::class,
-        \Payone\Sdk\Api\Client\ClientInterface::class,
-        \Payone\Sdk\Notification\Processor\ProcessorInterface::class,
-        \Payone\Sdk\Notification\Handler\HandlerManagerInterface::class,
-        \Payone\Sdk\Redirect\Token\TokenFactoryInterface::class,
-        \Payone\Sdk\Redirect\Token\Format\EncoderInterface::class,
-        \Payone\Sdk\Redirect\Token\Format\DecoderInterface::class,
-        \Payone\Sdk\Redirect\Token\Format\SignerInterface::class,
-        \Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorInterface::class,
-        \Payone\Sdk\Redirect\Handler\HandlerManagerInterface::class,
-        \Payone\Sdk\Redirect\Processor\ProcessorInterface::class,
+        Payone\Sdk\Http\Service::class,
+        Payone\Sdk\Api\Service::class,
+        Payone\Sdk\Notification\Service::class,
+        Payone\Sdk\Redirect\Service::class,
+        Payone\Sdk\Config\ConfigInterface::class,
+        Payone\Sdk\Api\Format\EncoderInterface::class,
+        Payone\Sdk\Api\Format\DecoderInterface::class,
+        Payone\Sdk\Api\Client\ClientInterface::class,
+        Payone\Sdk\Notification\Processor\ProcessorInterface::class,
+        Payone\Sdk\Notification\Handler\HandlerManagerInterface::class,
+        Payone\Sdk\Redirect\Token\TokenFactoryInterface::class,
+        Payone\Sdk\Redirect\Token\Format\EncoderInterface::class,
+        Payone\Sdk\Redirect\Token\Format\DecoderInterface::class,
+        Payone\Sdk\Redirect\Token\Format\SignerInterface::class,
+        Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorInterface::class,
+        Payone\Sdk\Redirect\Handler\HandlerManagerInterface::class,
+        Payone\Sdk\Redirect\Processor\ProcessorInterface::class,
     ];
 
     /**
      * The SDK service bindings.
      */
     protected const SERVICE_BINDINGS = [
-        \Payone\Sdk\Http\Service::class,
-        \Payone\Sdk\Api\Service::class,
-        \Payone\Sdk\Notification\Service::class,
-        \Payone\Sdk\Redirect\Service::class,
+        Http\Service::class,
+        Api\Service::class,
+        Notification\Service::class,
+        Redirect\Service::class,
     ];
 
     /**
@@ -72,27 +72,27 @@ class ContainerBuilder
         // --- SDK Bindings ---
 
         // Config
-        \Payone\Sdk\Config\ConfigInterface::class => [\Payone\Sdk\Config\Config::class, true],
+        Config\ConfigInterface::class => [Config\Config::class, true],
 
         // API Format
-        \Payone\Sdk\Api\Format\EncoderInterface::class => [\Payone\Sdk\Api\Format\Encoder::class, true],
-        \Payone\Sdk\Api\Format\DecoderInterface::class => [\Payone\Sdk\Api\Format\Decoder::class, true],
+        Api\Format\EncoderInterface::class => [Api\Format\Encoder::class, true],
+        Api\Format\DecoderInterface::class => [Api\Format\Decoder::class, true],
 
         // API Client
-        \Payone\Sdk\Api\Client\ClientInterface::class => [\Payone\Sdk\Api\Client\Client::class, true],
+        Api\Client\ClientInterface::class => [Api\Client\Client::class, true],
 
         // Notification
-        \Payone\Sdk\Notification\Processor\ProcessorInterface::class    => [\Payone\Sdk\Notification\Processor\Processor::class, true],
-        \Payone\Sdk\Notification\Handler\HandlerManagerInterface::class => [\Payone\Sdk\Notification\Handler\HandlerManager::class, true],
+        Notification\Processor\ProcessorInterface::class    => [Notification\Processor\Processor::class, true],
+        Notification\Handler\HandlerManagerInterface::class => [Notification\Handler\HandlerManager::class, true],
 
         // Redirect
-        \Payone\Sdk\Redirect\Token\TokenFactoryInterface::class        => [\Payone\Sdk\Redirect\Token\TokenFactory::class, true],
-        \Payone\Sdk\Redirect\Token\Format\EncoderInterface::class      => [\Payone\Sdk\Redirect\Token\Format\Encoder::class, true],
-        \Payone\Sdk\Redirect\Token\Format\DecoderInterface::class      => [\Payone\Sdk\Redirect\Token\Format\Decoder::class, true],
-        \Payone\Sdk\Redirect\Token\Format\SignerInterface::class       => [\Payone\Sdk\Redirect\Token\Format\Signer::class, true],
-        \Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorInterface::class => [\Payone\Sdk\Redirect\UrlGenerator\UrlGenerator::class, true],
-        \Payone\Sdk\Redirect\Handler\HandlerManagerInterface::class    => [\Payone\Sdk\Redirect\Handler\HandlerManager::class, true],
-        \Payone\Sdk\Redirect\Processor\ProcessorInterface::class       => [\Payone\Sdk\Redirect\Processor\Processor::class, true],
+        Redirect\Token\TokenFactoryInterface::class        => [Redirect\Token\TokenFactory::class, true],
+        Redirect\Token\Format\EncoderInterface::class      => [Redirect\Token\Format\Encoder::class, true],
+        Redirect\Token\Format\DecoderInterface::class      => [Redirect\Token\Format\Decoder::class, true],
+        Redirect\Token\Format\SignerInterface::class       => [Redirect\Token\Format\Signer::class, true],
+        Redirect\UrlGenerator\UrlGeneratorInterface::class => [Redirect\UrlGenerator\UrlGenerator::class, true],
+        Redirect\Handler\HandlerManagerInterface::class    => [Redirect\Handler\HandlerManager::class, true],
+        Redirect\Processor\ProcessorInterface::class       => [Redirect\Processor\Processor::class, true],
     ];
 
     /**
@@ -100,17 +100,17 @@ class ContainerBuilder
      */
     protected const EXTERNAL_BINDINGS = [
         // PSR-17 bindings, from cakasim/payone-sdk-http-message package
-        \Psr\Http\Message\UriFactoryInterface::class           => ['Cakasim\Payone\Sdk\Http\Factory\UriFactory', true],
-        \Psr\Http\Message\StreamFactoryInterface::class        => ['Cakasim\Payone\Sdk\Http\Factory\StreamFactory', true],
-        \Psr\Http\Message\RequestFactoryInterface::class       => ['Cakasim\Payone\Sdk\Http\Factory\RequestFactory', true],
-        \Psr\Http\Message\ResponseFactoryInterface::class      => ['Cakasim\Payone\Sdk\Http\Factory\ResponseFactory', true],
-        \Psr\Http\Message\ServerRequestFactoryInterface::class => ['Cakasim\Payone\Sdk\Http\Factory\ServerRequestFactory', true],
+        \Psr\Http\Message\UriFactoryInterface::class           => ['Payone\Sdk\Http\Factory\UriFactory', true],
+        \Psr\Http\Message\StreamFactoryInterface::class        => ['Payone\Sdk\Http\Factory\StreamFactory', true],
+        \Psr\Http\Message\RequestFactoryInterface::class       => ['Payone\Sdk\Http\Factory\RequestFactory', true],
+        \Psr\Http\Message\ResponseFactoryInterface::class      => ['Payone\Sdk\Http\Factory\ResponseFactory', true],
+        \Psr\Http\Message\ServerRequestFactoryInterface::class => ['Payone\Sdk\Http\Factory\ServerRequestFactory', true],
 
         // PSR-18 bindings, from cakasim/payone-sdk-stream-client package
-        \Psr\Http\Client\ClientInterface::class => ['Cakasim\Payone\Sdk\Http\StreamClient\StreamClient', true],
+        \Psr\Http\Client\ClientInterface::class => ['Payone\Sdk\Http\StreamClient\StreamClient', true],
 
         // PSR-3 bindings, from cakasim/payone-sdk-silent-logger package
-        \Psr\Log\LoggerInterface::class => ['Cakasim\Payone\Sdk\Log\SilentLogger\SilentLogger', true],
+        \Psr\Log\LoggerInterface::class => ['Payone\Sdk\Log\SilentLogger\SilentLogger', true],
     ];
 
     /**
@@ -213,7 +213,7 @@ class ContainerBuilder
     protected function bindExternal(): void
     {
         foreach (static::getExternalBindings() as $id => $binding) {
-            if (!$this->container->has($id) && class_exists($binding[0])) {
+            if (!$this->container->has($id)) {
                 $this->container->bind($id, $binding[0], $binding[1]);
             }
         }

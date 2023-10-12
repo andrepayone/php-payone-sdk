@@ -4,8 +4,125 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0aafd57e35bd58c54bc7bc166c48f8d0",
+    "content-hash": "4ec2132909045521a0b9a0af0dfad12b",
     "packages": [
+        {
+            "name": "andrepayone/payone-sdk-http-message",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrepayone/php-payone-sdk-http-message.git",
+                "reference": "3922faedb8aa3f23c1dd1df5602b5ac044d83df4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrepayone/php-payone-sdk-http-message/zipball/3922faedb8aa3f23c1dd1df5602b5ac044d83df4",
+                "reference": "3922faedb8aa3f23c1dd1df5602b5ac044d83df4",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "psr/http-factory": "^1.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Payone\\Sdk\\Http\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabian Böttcher",
+                    "email": "me@cakasim.de",
+                    "homepage": "https://cakasim.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "André Gregor-Herrmann",
+                    "email": "andre.gregor-herrmann@payone.com",
+                    "homepage": "https://payone.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PSR-7 and PSR-17 Implementation for the SDK for PAYONE Payment Integration.",
+            "homepage": "https://payone.de",
+            "keywords": [
+                "payment",
+                "payone",
+                "psr-17",
+                "psr-7",
+                "sdk"
+            ],
+            "support": {
+                "email": "support@cakasim.de",
+                "issues": "https://github.com/andrepayone/php-payone-sdk-http-message/issues",
+                "source": "https://github.com/andrepayone/php-payone-sdk-http-message"
+            },
+            "time": "2023-10-11T07:26:58+00:00"
+        },
+        {
+            "name": "andrepayone/payone-sdk-silent-logger",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrepayone/php-payone-sdk-silent-logger.git",
+                "reference": "650ec4a4b66a2526e4193b4a124bdaf2653b6d6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrepayone/php-payone-sdk-silent-logger/zipball/650ec4a4b66a2526e4193b4a124bdaf2653b6d6c",
+                "reference": "650ec4a4b66a2526e4193b4a124bdaf2653b6d6c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "psr/log": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Payone\\Sdk\\Log\\SilentLogger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabian Böttcher",
+                    "email": "me@cakasim.de",
+                    "homepage": "https://cakasim.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "André Gregor-Herrmann",
+                    "email": "andre.gregor-herrmann@payone.com",
+                    "homepage": "https://payone.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PSR-3 Noop-Logger Implementation for the SDK for PAYONE Payment Integration.",
+            "homepage": "https://payone.de",
+            "keywords": [
+                "logger",
+                "payment",
+                "payone",
+                "psr-3",
+                "sdk"
+            ],
+            "support": {
+                "email": "support@cakasim.de",
+                "issues": "https://github.com/Cakasim/php-payone-sdk-silent-logger/issues",
+                "source": "https://github.com/Cakasim/php-payone-sdk-silent-logger"
+            },
+            "time": "2023-10-09T09:31:09+00:00"
+        },
         {
             "name": "psr/container",
             "version": "1.1.2",
@@ -163,16 +280,16 @@
         },
         {
             "name": "psr/http-message",
-            "version": "2.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71"
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/402d35bcb92c70c026d1a6a9883f06b2ead23d71",
-                "reference": "402d35bcb92c70c026d1a6a9883f06b2ead23d71",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
                 "shasum": ""
             },
             "require": {
@@ -181,7 +298,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -196,7 +313,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
+                    "homepage": "http://www.php-fig.org/"
                 }
             ],
             "description": "Common interface for HTTP messages",
@@ -210,9 +327,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-message/tree/2.0"
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
             },
-            "time": "2023-04-04T09:54:51+00:00"
+            "time": "2023-04-04T09:50:52+00:00"
         },
         {
             "name": "psr/log",

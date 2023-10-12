@@ -18,6 +18,7 @@ use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\ContainerInterface;
 use Psr\Container\NotFoundExceptionInterface;
+use ReflectionException;
 
 /**
  * @author Fabian Böttcher <me@cakasim.de>
@@ -105,7 +106,7 @@ class ContainerTest extends TestCase
     public function testClassBindingWithNonExistingConcrete(): void
     {
         $container = new Container();
-        $this->expectException(ContainerExceptionInterface::class);
+        $this->expectException(ReflectionException::class);
         $container->bind(AInterface::class, 'Non\Existing\ConcreteClass');
     }
 
