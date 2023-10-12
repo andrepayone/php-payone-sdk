@@ -39,7 +39,7 @@ The SDK for PAYONE Payment Integration is open-sourced software licensed under t
 Installing the SDK
 ------------------
 
-Just run `composer require cakasim/payone-sdk` to install the SDK via composer.
+Just run `composer require andrepayone/payone-sdk` to install the SDK via composer.
 
 Core Concepts
 -------------
