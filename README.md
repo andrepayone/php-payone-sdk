@@ -1,12 +1,9 @@
 SDK for PAYONE Payment Integration
 ==================================
 
-[![CI Status](https://github.com/Cakasim/php-payone-sdk/workflows/CI/badge.svg?branch=master)](https://github.com/Cakasim/php-payone-sdk/actions)
-[![Build Status](https://travis-ci.org/Cakasim/php-payone-sdk.svg?branch=master)](https://travis-ci.org/Cakasim/php-payone-sdk)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Cakasim/php-payone-sdk/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Cakasim/php-payone-sdk/?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/Cakasim/php-payone-sdk/badge.svg?branch=master)](https://coveralls.io/github/Cakasim/php-payone-sdk?branch=master)
-[![LICENSE](https://img.shields.io/github/license/Cakasim/php-payone-sdk.svg)](LICENSE)
-[![Total Downloads](https://poser.pugx.org/cakasim/payone-sdk/downloads)](https://packagist.org/packages/cakasim/payone-sdk)
+[![CI Status](https://github.com/andrepayone/php-payone-sdk/workflows/CI/badge.svg?branch=main)](https://github.com/andrepayone/php-payone-sdk/actions)
+[![Build Status](https://travis-ci.org/andrepayone/php-payone-sdk.svg?branch=main)](https://travis-ci.org/andrepayone/php-payone-sdk)
+[![Total Downloads](https://poser.pugx.org/andrepayone/payone-sdk/downloads)](https://packagist.org/packages/andrepayone/payone-sdk)
 
 Introduction
 ------------
@@ -192,8 +189,8 @@ because the SDK uses the config to set them before sending the actual request.
 
 ```php
 // Create your request / response objects
-$response = new \Cakasim\Payone\Sdk\Api\Message\Response();
-$request = new \Cakasim\Payone\Sdk\Api\Message\Payment\AuthorizationRequest([
+$response = new \Payone\Sdk\Api\Message\Response();
+$request = new \Payone\Sdk\Api\Message\Payment\AuthorizationRequest([
     // Perform a pre-authorization which reserves the amount,
     // a follow-up request will be necessary to actually capture the amount
     'request' => 'preauthorization',
@@ -277,10 +274,10 @@ has a status of `REDIRECT` and a `redirecturl` parameter which must be used to r
 In some scenarios a redirect is not always necessary, the example covers this as well.
 
 ```php
-use Cakasim\Payone\Sdk\Api\Message\Parameter\BackUrlAwareInterface;
-use Cakasim\Payone\Sdk\Api\Message\Parameter\ErrorUrlAwareInterface;
-use Cakasim\Payone\Sdk\Api\Message\Parameter\SuccessUrlAwareInterface;
-use Cakasim\Payone\Sdk\Api\Message\Payment\AuthorizationRequest;
+use Payone\Sdk\Api\Message\Parameter\BackUrlAwareInterface;
+use Payone\Sdk\Api\Message\Parameter\ErrorUrlAwareInterface;
+use Payone\Sdk\Api\Message\Parameter\SuccessUrlAwareInterface;
+use Payone\Sdk\Api\Message\Payment\AuthorizationRequest;
 
 // Use an inline class to customize the API request.
 // The inline class is tagged with the interfaces to support redirect URL parameters.
@@ -313,7 +310,7 @@ $request = new class() extends AuthorizationRequest
 };
 
 // Use an inline class to customize the API response
-$response = new class() extends \Cakasim\Payone\Sdk\Api\Message\Response {
+$response = new class() extends \Payone\Sdk\Api\Message\Response {
     public function getRedirectUrl(): ?string
     {
         // Return a valid redirect URL or null
@@ -360,8 +357,8 @@ how this should be done. Basically using a simple query parameter is a sane and 
 Have a look at the example below which shows you how to process the token and access the token payload data.
 
 ```php
-use Cakasim\Payone\Sdk\Redirect\Context\ContextInterface;
-use Cakasim\Payone\Sdk\Redirect\Handler\HandlerInterface;
+use Payone\Sdk\Redirect\Context\ContextInterface;
+use Payone\Sdk\Redirect\Handler\HandlerInterface;
 
 // Get the token from the request URL
 $token = '...';
