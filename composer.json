@@ -40,11 +40,12 @@
         "psr/log": "^1.1",
         "psr/container": "^1.0",
         "andrepayone/payone-sdk-http-message": "0.2.0",
-        "andrepayone/payone-sdk-silent-logger": "0.2.0"
+        "andrepayone/payone-sdk-silent-logger": "0.2.0",
+        "andrepayone/payone-sdk-stream-client": "0.2.0"
     },
     "suggest": {
         "andrepayone/payone-sdk-http-message": "Provides the default HTTP message implementation.",
-        "cakasim/payone-sdk-stream-client": "Provides the default HTTP client implementation.",
+        "andrepayone/payone-sdk-stream-client": "Provides the default HTTP client implementation.",
         "andrepayone/payone-sdk-silent-logger": "Provides the default logger implementation."
     },
     "autoload": {

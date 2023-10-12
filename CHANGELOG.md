@@ -1,6 +1,21 @@
 Changelog
 =========
 
+0.3.0
+----
+
+**_Development Release / 2023-10-12_**
+
+_Please use this release with caution. Versions prior to 1.0.0
+are considered development releases._
+
+### Changes
+
+- **[BREAKING]** Renamed namespace to `Payone\Sdk`
+- **[BREAKING]** Abandoned not maintained PHP-Versions (before 8.1)
+- PHP8-Support
+
+
 0.2.0
 ----
 **_Development Release / 2020-07-18_**

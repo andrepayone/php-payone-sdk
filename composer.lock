@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ec2132909045521a0b9a0af0dfad12b",
+    "content-hash": "6eb83469f6981faec949f54592d54a43",
     "packages": [
         {
             "name": "andrepayone/payone-sdk-http-message",
@@ -122,6 +122,65 @@
                 "source": "https://github.com/Cakasim/php-payone-sdk-silent-logger"
             },
             "time": "2023-10-09T09:31:09+00:00"
+        },
+        {
+            "name": "andrepayone/payone-sdk-stream-client",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrepayone/php-payone-sdk-stream-client.git",
+                "reference": "53ff170715f5527ab12fed197787cb8328059a4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrepayone/php-payone-sdk-stream-client/zipball/53ff170715f5527ab12fed197787cb8328059a4d",
+                "reference": "53ff170715f5527ab12fed197787cb8328059a4d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "psr/http-client": "^1.0.3",
+                "psr/http-factory": "^1.0.2",
+                "psr/http-message": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Payone\\Sdk\\Http\\StreamClient\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabian Böttcher",
+                    "email": "me@cakasim.de",
+                    "homepage": "https://cakasim.de",
+                    "role": "Developer"
+                },
+                {
+                    "name": "André Gregor-Herrmann",
+                    "email": "andre.gregor-herrmann@payone.com",
+                    "homepage": "https://payone.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PSR-18 Stream Client Implementation for the SDK for PAYONE Payment Integration.",
+            "homepage": "https://payone.de",
+            "keywords": [
+                "payment",
+                "payone",
+                "psr-18",
+                "sdk"
+            ],
+            "support": {
+                "email": "integrations@payone.com",
+                "issues": "https://github.com/andrepayone/php-payone-sdk-stream-client/issues",
+                "source": "https://github.com/andrepayone/php-payone-sdk-stream-client"
+            },
+            "time": "2023-10-12T07:42:45+00:00"
         },
         {
             "name": "psr/container",
