@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Tests\Api\Message\Payment;
+namespace Payone\Sdk\Tests\Api\Message\Payment;
 
-use Cakasim\Payone\Sdk\Api\Message\Payment\AuthorizationRequest;
+use Payone\Sdk\Api\Message\Payment\AuthorizationRequest;
 use PHPUnit\Framework\TestCase;
 
 /**

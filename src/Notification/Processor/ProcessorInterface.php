@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Notification\Processor;
+namespace Payone\Sdk\Notification\Processor;
 
 use Psr\Http\Message\ServerRequestInterface;
 

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Tests\Api\Format;
+namespace Payone\Sdk\Tests\Api\Format;
 
-use Cakasim\Payone\Sdk\Api\Format\Decoder;
-use Cakasim\Payone\Sdk\Api\Format\DecoderInterface;
+use Payone\Sdk\Api\Format\Decoder;
+use Payone\Sdk\Api\Format\DecoderInterface;
 use PHPUnit\Framework\TestCase;
 
 /**

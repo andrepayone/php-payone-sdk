@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Notification\Handler;
+namespace Payone\Sdk\Notification\Handler;
 
-use Cakasim\Payone\Sdk\Notification\Context\ContextInterface;
+use Payone\Sdk\Notification\Context\ContextInterface;
 use Psr\Log\LoggerInterface;
 
 /**

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Notification\Context;
+namespace Payone\Sdk\Notification\Context;
 
-use Cakasim\Payone\Sdk\Notification\Message\MessageInterface;
+use Payone\Sdk\Notification\Message\MessageInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
 /**

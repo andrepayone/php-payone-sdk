@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Tests;
+namespace Payone\Sdk\Tests;
 
 use PHPUnit\Framework\TestCase;
 

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Tests\Redirect\Token;
+namespace Payone\Sdk\Tests\Redirect\Token;
 
-use Cakasim\Payone\Sdk\Redirect\Token\Token;
-use Cakasim\Payone\Sdk\Redirect\Token\TokenFactory;
-use Cakasim\Payone\Sdk\Redirect\Token\TokenInterface;
+use Payone\Sdk\Redirect\Token\Token;
+use Payone\Sdk\Redirect\Token\TokenFactory;
+use Payone\Sdk\Redirect\Token\TokenInterface;
 use JsonSerializable;
 use PHPUnit\Framework\TestCase;
 

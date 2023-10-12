@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Config;
+namespace Payone\Sdk\Config;
 
-use Cakasim\Payone\Sdk\SdkExceptionInterface;
+use Payone\Sdk\SdkExceptionInterface;
 
 /**
  * @author Fabian Böttcher <me@cakasim.de>

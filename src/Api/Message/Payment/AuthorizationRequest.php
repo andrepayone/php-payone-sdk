@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Api\Message\Payment;
+namespace Payone\Sdk\Api\Message\Payment;
 
-use Cakasim\Payone\Sdk\Api\Message\Payment\Parameter\Amount;
-use Cakasim\Payone\Sdk\Api\Message\Payment\Parameter\Currency;
-use Cakasim\Payone\Sdk\Api\Message\Request;
+use Payone\Sdk\Api\Message\Payment\Parameter\Amount;
+use Payone\Sdk\Api\Message\Payment\Parameter\Currency;
+use Payone\Sdk\Api\Message\Request;
 
 /**
  * Represents a payment (pre)authorization request.

@@ -2,19 +2,19 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Redirect;
+namespace Payone\Sdk\Redirect;
 
-use Cakasim\Payone\Sdk\AbstractService;
-use Cakasim\Payone\Sdk\Api\Message\Parameter\BackUrlAwareInterface;
-use Cakasim\Payone\Sdk\Api\Message\Parameter\ErrorUrlAwareInterface;
-use Cakasim\Payone\Sdk\Api\Message\Parameter\SuccessUrlAwareInterface;
-use Cakasim\Payone\Sdk\Api\Message\RequestInterface;
-use Cakasim\Payone\Sdk\Redirect\Handler\HandlerInterface;
-use Cakasim\Payone\Sdk\Redirect\Handler\HandlerManagerInterface;
-use Cakasim\Payone\Sdk\Redirect\Processor\ProcessorExceptionInterface;
-use Cakasim\Payone\Sdk\Redirect\Processor\ProcessorInterface;
-use Cakasim\Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorExceptionInterface;
-use Cakasim\Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorInterface;
+use Payone\Sdk\AbstractService;
+use Payone\Sdk\Api\Message\Parameter\BackUrlAwareInterface;
+use Payone\Sdk\Api\Message\Parameter\ErrorUrlAwareInterface;
+use Payone\Sdk\Api\Message\Parameter\SuccessUrlAwareInterface;
+use Payone\Sdk\Api\Message\RequestInterface;
+use Payone\Sdk\Redirect\Handler\HandlerInterface;
+use Payone\Sdk\Redirect\Handler\HandlerManagerInterface;
+use Payone\Sdk\Redirect\Processor\ProcessorExceptionInterface;
+use Payone\Sdk\Redirect\Processor\ProcessorInterface;
+use Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorExceptionInterface;
+use Payone\Sdk\Redirect\UrlGenerator\UrlGeneratorInterface;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 

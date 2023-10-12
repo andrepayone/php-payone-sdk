@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Redirect\Token\Format;
+namespace Payone\Sdk\Redirect\Token\Format;
 
-use Cakasim\Payone\Sdk\Config\ConfigExceptionInterface;
-use Cakasim\Payone\Sdk\Config\ConfigInterface;
-use Cakasim\Payone\Sdk\Redirect\Token\Token;
-use Cakasim\Payone\Sdk\Redirect\Token\TokenInterface;
+use Payone\Sdk\Config\ConfigExceptionInterface;
+use Payone\Sdk\Config\ConfigInterface;
+use Payone\Sdk\Redirect\Token\Token;
+use Payone\Sdk\Redirect\Token\TokenInterface;
 
 /**
  * @author Fabian Böttcher <me@cakasim.de>

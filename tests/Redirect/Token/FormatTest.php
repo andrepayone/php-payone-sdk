@@ -2,21 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Tests\Redirect\Token\Format;
+namespace Payone\Sdk\Tests\Redirect\Token\Format;
 
-use Cakasim\Payone\Sdk\Config\Config;
-use Cakasim\Payone\Sdk\Config\ConfigInterface;
-use Cakasim\Payone\Sdk\Container\ContainerException;
-use Cakasim\Payone\Sdk\ContainerBuilder;
-use Cakasim\Payone\Sdk\Redirect\Token\Format\Decoder;
-use Cakasim\Payone\Sdk\Redirect\Token\Format\DecoderExceptionInterface;
-use Cakasim\Payone\Sdk\Redirect\Token\Format\DecoderInterface;
-use Cakasim\Payone\Sdk\Redirect\Token\Format\Encoder;
-use Cakasim\Payone\Sdk\Redirect\Token\Format\EncoderExceptionInterface;
-use Cakasim\Payone\Sdk\Redirect\Token\Format\EncoderInterface;
-use Cakasim\Payone\Sdk\Redirect\Token\TokenFactory;
-use Cakasim\Payone\Sdk\Redirect\Token\TokenFactoryInterface;
-use Cakasim\Payone\Sdk\Sdk;
+use Payone\Sdk\Config\Config;
+use Payone\Sdk\Config\ConfigInterface;
+use Payone\Sdk\Container\ContainerException;
+use Payone\Sdk\ContainerBuilder;
+use Payone\Sdk\Redirect\Token\Format\Decoder;
+use Payone\Sdk\Redirect\Token\Format\DecoderExceptionInterface;
+use Payone\Sdk\Redirect\Token\Format\DecoderInterface;
+use Payone\Sdk\Redirect\Token\Format\Encoder;
+use Payone\Sdk\Redirect\Token\Format\EncoderExceptionInterface;
+use Payone\Sdk\Redirect\Token\Format\EncoderInterface;
+use Payone\Sdk\Redirect\Token\TokenFactory;
+use Payone\Sdk\Redirect\Token\TokenFactoryInterface;
+use Payone\Sdk\Sdk;
 use PHPUnit\Framework\TestCase;
 
 /**

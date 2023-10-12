@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Redirect\Handler;
+namespace Payone\Sdk\Redirect\Handler;
 
-use Cakasim\Payone\Sdk\Redirect\Context\ContextInterface;
+use Payone\Sdk\Redirect\Context\ContextInterface;
 
 /**
  * Manages redirect handlers.

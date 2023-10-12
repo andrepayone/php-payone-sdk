@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Tests\Config;
+namespace Payone\Sdk\Tests\Config;
 
-use Cakasim\Payone\Sdk\Config\Config;
-use Cakasim\Payone\Sdk\Config\ConfigException;
-use Cakasim\Payone\Sdk\Config\ConfigInterface;
+use Payone\Sdk\Config\Config;
+use Payone\Sdk\Config\ConfigException;
+use Payone\Sdk\Config\ConfigInterface;
 use PHPUnit\Framework\TestCase;
 
 /**

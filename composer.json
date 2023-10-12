@@ -1,5 +1,5 @@
 {
-    "name": "cakasim/payone-sdk",
+    "name": "andrepayone/payone-sdk",
     "description": "A SDK for PAYONE payment integration.",
     "type": "library",
     "keywords": [
@@ -7,7 +7,7 @@
         "payment",
         "sdk"
     ],
-    "homepage": "https://cakasim.de",
+    "homepage": "https://payone.de",
     "readme": "README.md",
     "license": "MIT",
     "authors": [
@@ -16,43 +16,51 @@
             "email": "me@cakasim.de",
             "homepage": "https://cakasim.de",
             "role": "Developer"
+        },
+        {
+            "name": "André Gregor-Herrmann",
+            "email": "andre.gregor-herrmann@payone.com",
+            "homepage": "https://payone.de",
+            "role": "Developer"
         }
     ],
     "support": {
-        "email": "support@cakasim.de",
-        "issues": "https://github.com/Cakasim/php-payone-sdk/issues",
-        "source": "https://github.com/Cakasim/php-payone-sdk"
+        "email": "integrations@payone.com",
+        "issues": "https://github.com/andrepayone/php-payone-sdk/issues",
+        "source": "https://github.com/andrepayone/php-payone-sdk"
     },
     "minimum-stability": "stable",
     "require": {
-        "php": "^7.1",
+        "php": "^8.1",
         "ext-json": "*",
         "ext-openssl": "*",
-        "psr/http-message": "^1.0",
-        "psr/http-client": "^1.0",
-        "psr/http-factory": "^1.0",
+        "psr/http-message": "^1.1",
+        "psr/http-client": "^1.0.3",
+        "psr/http-factory": "^1.0.2",
         "psr/log": "^1.1",
-        "psr/container": "^1.0"
+        "psr/container": "^1.0",
+        "andrepayone/payone-sdk-http-message": "0.2.0",
+        "andrepayone/payone-sdk-silent-logger": "0.2.0",
+        "andrepayone/payone-sdk-stream-client": "0.2.0"
     },
-    "require-dev": {},
     "suggest": {
-        "cakasim/payone-sdk-http-message": "Provides the default HTTP message implementation.",
-        "cakasim/payone-sdk-stream-client": "Provides the default HTTP client implementation.",
-        "cakasim/payone-sdk-silent-logger": "Provides the default logger implementation."
+        "andrepayone/payone-sdk-http-message": "Provides the default HTTP message implementation.",
+        "andrepayone/payone-sdk-stream-client": "Provides the default HTTP client implementation.",
+        "andrepayone/payone-sdk-silent-logger": "Provides the default logger implementation."
     },
     "autoload": {
         "psr-4": {
-            "Cakasim\\Payone\\Sdk\\": "src/"
+            "Payone\\Sdk\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Cakasim\\Payone\\Sdk\\Tests\\": "tests/"
+            "Payone\\Sdk\\Tests\\": "tests/"
         }
     },
     "scripts": {
-        "download-phpcsf": "curl --silent -L https://cs.symfony.com/download/php-cs-fixer-v2.phar --create-dirs --output vendor/bin/phpcsf",
-        "download-phpstan": "curl --silent -L https://github.com/phpstan/phpstan/releases/download/0.12.5/phpstan.phar --create-dirs --output vendor/bin/phpstan",
+        "download-phpcsf": "curl --silent -L https://cs.symfony.com/download/php-cs-fixer-v3.phar --create-dirs --output vendor/bin/phpcsf",
+        "download-phpstan": "curl --silent -L https://github.com/phpstan/phpstan/releases/download/1.10.38/phpstan.phar --create-dirs --output vendor/bin/phpstan",
         "download-phpunit": "curl --silent -L https://phar.phpunit.de/phpunit-8.phar --create-dirs --output vendor/bin/phpunit",
         "phpcsf": "php vendor/bin/phpcsf -v fix --dry-run --allow-risky=yes",
         "phpstan": "php vendor/bin/phpstan analyse",

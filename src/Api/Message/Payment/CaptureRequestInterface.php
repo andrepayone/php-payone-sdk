@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Api\Message\Payment;
+namespace Payone\Sdk\Api\Message\Payment;
 
-use Cakasim\Payone\Sdk\Api\Message\RequestInterface;
+use Payone\Sdk\Api\Message\RequestInterface;
 
 /**
  * The interface for payment capturing API requests.

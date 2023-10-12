@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Redirect\Token\Format;
+namespace Payone\Sdk\Redirect\Token\Format;
 
-use Cakasim\Payone\Sdk\SdkExceptionInterface;
+use Payone\Sdk\SdkExceptionInterface;
 
 /**
  * Represents an exception during the token decoding process.

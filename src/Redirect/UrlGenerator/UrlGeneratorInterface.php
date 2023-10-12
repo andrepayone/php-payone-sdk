@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Redirect\UrlGenerator;
+namespace Payone\Sdk\Redirect\UrlGenerator;
 
 /**
  * The URL generator makes redirect URLs with payload data

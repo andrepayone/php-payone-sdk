@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Container\Binding;
+namespace Payone\Sdk\Container\Binding;
 
-use Cakasim\Payone\Sdk\Container\Container;
-use Cakasim\Payone\Sdk\Container\ContainerException;
+use Payone\Sdk\Container\Container;
+use Payone\Sdk\Container\ContainerException;
 use ReflectionClass;
 use ReflectionException;
 
@@ -59,11 +59,11 @@ class ClassBinding implements BindingInterface
             throw new ContainerException("Cannot create binding for '{$abstract}', the type '{$abstract}' does not exist.");
         }
 
-        try {
-            $this->concrete = new ReflectionClass($concrete);
-        } catch (ReflectionException $e) {
-            throw new ContainerException("Cannot create binding for '{$abstract}', the type '{$concrete}' does not exist.", $e);
+        if (!class_exists($concrete)) {
+            throw new ReflectionException("Cannot create binding for '{$concrete}', because that class does not exist.");
         }
+
+        $this->concrete = new ReflectionClass($concrete);
 
         if ($concrete !== $abstract && !$this->concrete->isSubclassOf($abstract)) {
             throw new ContainerException("Cannot create binding for '{$abstract}', the type '{$concrete}' must be an instance of '{$abstract}'.");

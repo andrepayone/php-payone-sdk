@@ -2,12 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Container;
+namespace Payone\Sdk\Container;
 
-use Cakasim\Payone\Sdk\Container\Binding\BindingInterface;
-use Cakasim\Payone\Sdk\Container\Binding\CallableBinding;
-use Cakasim\Payone\Sdk\Container\Binding\ClassBinding;
-use Cakasim\Payone\Sdk\Container\Binding\InstanceBinding;
+use Closure;
+use Payone\Sdk\Container\Binding\BindingInterface;
+use Payone\Sdk\Container\Binding\CallableBinding;
+use Payone\Sdk\Container\Binding\ClassBinding;
+use Payone\Sdk\Container\Binding\InstanceBinding;
 use Psr\Container\ContainerInterface;
 
 /**
@@ -112,13 +113,13 @@ final class Container implements ContainerInterface
      * to the provided ID.
      *
      * @param string $id The abstract type of the callable's return value.
-     * @param callable $concrete The callable which returns the actual binding.
+     * @param string|Closure $concrete The callable which returns the actual binding.
      * @param bool $singleton True if the binding is a singleton.
      * @return $this
      *
      * @throws ContainerException If binding fails.
      */
-    public function bindCallable(string $id, callable $concrete, bool $singleton = false): self
+    public function bindCallable(string $id, string|Closure $concrete, bool $singleton = false): self
     {
         $this->throwIfBindingToExistingEntry($id);
 

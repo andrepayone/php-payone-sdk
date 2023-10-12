@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Redirect\UrlGenerator;
+namespace Payone\Sdk\Redirect\UrlGenerator;
 
-use Cakasim\Payone\Sdk\SdkExceptionInterface;
+use Payone\Sdk\SdkExceptionInterface;
 
 /**
  * Represents an exception during generation of a redirect URL.

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk;
+namespace Payone\Sdk;
 
 use Throwable;
 

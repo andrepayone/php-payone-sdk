@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Api\Message\Parameter;
+namespace Payone\Sdk\Api\Message\Parameter;
 
 /**
  * This interface acts as a marker for requests that support the

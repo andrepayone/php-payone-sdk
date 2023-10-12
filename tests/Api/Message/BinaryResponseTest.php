@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Tests\Api\Message;
+namespace Payone\Sdk\Tests\Api\Message;
 
-use Cakasim\Payone\Sdk\Api\Message\BinaryResponse;
-use Cakasim\Payone\Sdk\Http\Factory\StreamFactory;
+use Payone\Sdk\Api\Message\BinaryResponse;
+use Payone\Sdk\Http\Factory\StreamFactory;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 

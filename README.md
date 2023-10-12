@@ -25,7 +25,7 @@ but has aged and direct use may be uncomfortable.
 
 ### Requirements
 
- - At least **PHP 7.1**
+ - At least **PHP 8.1**
  - [Composer Dependency Manager](https://getcomposer.org)
 
 *Although the SDK uses Composer, it does not have extensive dependencies on other packages.
@@ -82,9 +82,9 @@ ways to do that.
 This variant is the easiest to get started. The SDK will be constructed using all
 defaults which requires you to install some default PSR implementation packages:
  
- - `cakasim/payone-sdk-http-message` (PSR-7, PSR-17)
- - `cakasim/payone-sdk-stream-client` (PSR-18)
- - `cakasim/payone-sdk-silent-logger` (PSR-3)
+ - `andrepayone/payone-sdk-http-message` (PSR-7, PSR-17)
+ - `andrepayone/payone-sdk-stream-client` (PSR-18)
+ - `andrepayone/payone-sdk-silent-logger` (PSR-3)
 
 Now you are able to construct the SDK with just a single line of code:
 

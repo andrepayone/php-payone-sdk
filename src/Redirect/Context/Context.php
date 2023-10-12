@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Redirect\Context;
+namespace Payone\Sdk\Redirect\Context;
 
-use Cakasim\Payone\Sdk\Redirect\Token\TokenInterface;
+use Payone\Sdk\Redirect\Token\TokenInterface;
 
 /**
  * @author Fabian Böttcher <me@cakasim.de>

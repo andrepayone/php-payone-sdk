@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Api\Client;
+namespace Payone\Sdk\Api\Client;
 
-use Cakasim\Payone\Sdk\SdkExceptionInterface;
+use Payone\Sdk\SdkExceptionInterface;
 
 /**
  * The interface for exceptions thrown because of
@@ -29,7 +29,7 @@ interface ErrorResponseExceptionInterface extends SdkExceptionInterface
      * @return string The error message.
      * @see https://docs.payone.com/display/public/PLATFORM/errormessage+-+definition
      */
-    public function getMessage();
+    public function getMessage(): string;
 
     /**
      * Returns the public PAYONE API error message.

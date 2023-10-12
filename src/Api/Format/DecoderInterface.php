@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Api\Format;
+namespace Payone\Sdk\Api\Format;
 
 /**
  * Contract for API format decoders.

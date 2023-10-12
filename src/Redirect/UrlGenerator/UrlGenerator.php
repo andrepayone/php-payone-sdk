@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Cakasim\Payone\Sdk\Redirect\UrlGenerator;
+namespace Payone\Sdk\Redirect\UrlGenerator;
 
-use Cakasim\Payone\Sdk\Config\ConfigExceptionInterface;
-use Cakasim\Payone\Sdk\Config\ConfigInterface;
-use Cakasim\Payone\Sdk\Redirect\Token\Format\EncoderExceptionInterface;
-use Cakasim\Payone\Sdk\Redirect\Token\Format\EncoderInterface;
-use Cakasim\Payone\Sdk\Redirect\Token\TokenFactoryInterface;
+use Payone\Sdk\Config\ConfigExceptionInterface;
+use Payone\Sdk\Config\ConfigInterface;
+use Payone\Sdk\Redirect\Token\Format\EncoderExceptionInterface;
+use Payone\Sdk\Redirect\Token\Format\EncoderInterface;
+use Payone\Sdk\Redirect\Token\TokenFactoryInterface;
 use Psr\Http\Message\UriFactoryInterface;
 
 class UrlGenerator implements UrlGeneratorInterface
